@@ -21,35 +21,35 @@ public class Author {
 	@ManyToMany(mappedBy = "authors")
 	private Set<Book> books = new HashSet<>();
 
-	Long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	void setId(Long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
-	String getLastName() {
+	public String getLastName() {
 		return lastName;
 	}
 
-	void setLastName(String lastName) {
+	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 
-	String getFirstName() {
+	public String getFirstName() {
 		return firstName;
 	}
 
-	void setFirstName(String firstName) {
+	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 
-	Set<Book> getBooks() {
+	public Set<Book> getBooks() {
 		return books;
 	}
 
-	void setBooks(Set<Book> books) {
+	public void setBooks(Set<Book> books) {
 		this.books = books;
 	}
 
